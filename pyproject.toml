@@ -1,0 +1,22 @@
+[project]
+name = "sn-echoes"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "docker>=7.1.0",
+    "haystack>=0.42",
+    "haystack-ai>=2.23.0",
+    "loguru>=0.7.3",
+    "ollama>=0.6.1",
+    "openai>=2.17.0",
+    "pydantic>=2.10.6",
+    "python-dotenv>=1.0.1",
+    "rich>=13.9.4",
+    "streamlit>=1.54.0",
+    "yt-dlp>=2026.2.4",
+]
+
+[dependency-groups]
+dev = ["types-docker>=7.1.0.20241229"]

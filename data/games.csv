@@ -1,0 +1,50 @@
+date,time,home_team,home_goals,away_goals,away_team
+2016-08-14,18:00,Arsenal,3,4,Liverpool
+2016-08-20,17:00,Burnley,2,0,Liverpool
+2016-08-20,19:30,Leicester,0,0,Arsenal
+2016-08-27,14:30,Tottenham,1,1,Liverpool
+2016-09-10,17:00,Arsenal,2,1,Southampton
+2016-09-16,22:00,Chelsea,1,2,Liverpool
+2016-09-17,17:00,Hull City,1,4,Arsenal
+2016-09-24,14:30,Manchester United,4,1,Leicester
+2016-09-24,19:30,Arsenal,3,0,Chelsea
+2016-10-01,14:30,Swansea,1,2,Liverpool
+2016-10-02,18:30,Burnley,0,1,Arsenal
+2016-10-15,14:30,Chelsea,3,0,Leicester
+2016-10-17,22:00,Liverpool,0,0,Manchester United
+2016-10-22,17:00,Arsenal,0,0,Middlesbrough
+2016-10-22,19:30,Liverpool,2,1,West Brom
+2016-10-29,14:30,Sunderland,1,4,Arsenal
+2016-10-29,17:00,Tottenham,1,1,Leicester
+2016-10-29,19:30,Crystal Palace,2,4,Liverpool
+2016-11-06,17:15,Liverpool,6,1,Watford
+2016-11-06,19:30,Leicester,1,2,West Brom
+2016-11-19,18:00,Manchester United,1,1,Arsenal
+2016-11-19,18:00,Southampton,0,0,Liverpool
+2016-11-26,18:00,Liverpool,2,0,Sunderland
+2016-12-04,16:30,Bournemouth,4,3,Liverpool
+2016-12-10,20:30,Leicester,4,2,Manchester City
+2016-12-11,19:30,Liverpool,2,2,West Ham
+2016-12-14,22:45,Middlesbrough,0,3,Liverpool
+2016-12-19,23:00,Everton,0,1,Liverpool
+2016-12-27,20:15,Liverpool,4,1,Stoke City
+2016-12-31,20:30,Liverpool,1,0,Manchester City
+2017-01-02,15:30,Middlesbrough,0,0,Leicester
+2017-01-02,18:00,Sunderland,2,2,Liverpool
+2017-01-03,18:00,Bournemouth,3,3,Arsenal
+2017-01-14,20:30,Leicester,0,3,Chelsea
+2017-01-15,19:00,Manchester United,1,1,Liverpool
+2017-01-21,15:30,Liverpool,2,3,Swansea
+2017-01-22,18:00,Arsenal,2,1,Burnley
+2017-01-31,23:00,Liverpool,1,1,Chelsea
+2017-02-04,18:00,Chelsea,3,1,Arsenal
+2017-02-27,23:00,Leicester,3,1,Liverpool
+2017-03-18,18:00,West Brom,3,1,Arsenal
+2017-04-02,18:00,Arsenal,2,2,Manchester City
+2017-04-09,18:00,Everton,4,2,Leicester
+2017-04-10,18:00,Crystal Palace,3,0,Arsenal
+2017-04-26,21:45,Arsenal,1,0,Leicester
+2017-04-30,18:00,Tottenham,2,0,Arsenal
+2017-05-06,17:00,Leicester,3,0,Watford
+2017-05-13,14:30,Manchester City,2,1,Leicester
+2017-05-13,18:00,Stoke City,1,4,Arsenal

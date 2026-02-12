@@ -1,0 +1,400 @@
+[
+  {
+    "data": "2016-08-14 - Arsenal 3 - 4 Liverpool",
+    "gols": [
+      {"minuto": "31", "jogador": "Theo Walcott", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "46", "jogador": "Philippe Coutinho", "time": "Liverpool", "tipo": "Free kick"},
+      {"minuto": "49", "jogador": "Adam Lallana", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "56", "jogador": "Philippe Coutinho", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "63", "jogador": "Sadio Mané", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "64", "jogador": "Alex Oxlade-Chamberlain", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "75", "jogador": "Calum Chambers", "time": "Arsenal", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2016-08-20 - Burnley 2 - 0 Liverpool",
+    "gols": [
+      {"minuto": "2", "jogador": "Sam Vokes", "time": "Burnley", "tipo": "Finalization"},
+      {"minuto": "37", "jogador": "Andre Gray", "time": "Burnley", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-08-20 - Leicester 0 - 0 Arsenal",
+    "gols": []
+  },
+  {
+    "data": "2016-08-27 - Tottenham 1 - 1 Liverpool",
+    "gols": [
+      {"minuto": "43", "jogador": "James Milner", "time": "Liverpool", "tipo": "Penalty"},
+      {"minuto": "72", "jogador": "Danny Rose", "time": "Tottenham", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-09-10 - Arsenal 2 - 1 Southampton",
+    "gols": [
+      {"minuto": "18", "jogador": "Petr Cech (GC)", "time": "Southampton", "tipo": "Own goal"},
+      {"minuto": "29", "jogador": "Laurent Koscielny", "time": "Arsenal", "tipo": "Bicycle"},
+      {"minuto": "94", "jogador": "Santi Cazorla", "time": "Arsenal", "tipo": "Penalty"}
+    ]
+  },
+  {
+    "data": "2016-09-16 - Chelsea 1 - 2 Liverpool",
+    "gols": [
+      {"minuto": "17", "jogador": "Dejan Lovren", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "36", "jogador": "Jordan Henderson", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "61", "jogador": "Diego Costa", "time": "Chelsea", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-09-17 - Hull City 1 - 4 Arsenal",
+    "gols": [
+      {"minuto": "17", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "55", "jogador": "Theo Walcott", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "79", "jogador": "Robert Snodgrass", "time": "Hull City", "tipo": "Penalty"},
+      {"minuto": "83", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "92", "jogador": "Granit Xhaka", "time": "Arsenal", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-09-24 - Manchester United 4 - 1 Leicester",
+    "gols": [
+      {"minuto": "22", "jogador": "Chris Smalling", "time": "Manchester United", "tipo": "Header"},
+      {"minuto": "37", "jogador": "Juan Mata", "time": "Manchester United", "tipo": "Finalization"},
+      {"minuto": "40", "jogador": "Marcus Rashford", "time": "Manchester United", "tipo": "Finalization"},
+      {"minuto": "42", "jogador": "Paul Pogba", "time": "Manchester United", "tipo": "Header"},
+      {"minuto": "59", "jogador": "Demarai Gray", "time": "Leicester", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-09-24 - Arsenal 3 - 0 Chelsea",
+    "gols": [
+      {"minuto": "11", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "14", "jogador": "Theo Walcott", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "40", "jogador": "Mesut Özil", "time": "Arsenal", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-10-01 - Swansea 1 - 2 Liverpool",
+    "gols": [
+      {"minuto": "8", "jogador": "Leroy Fer", "time": "Swansea", "tipo": "Finalization"},
+      {"minuto": "54", "jogador": "Roberto Firmino", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "84", "jogador": "James Milner", "time": "Liverpool", "tipo": "Penalty"}
+    ]
+  },
+  {
+    "data": "2016-10-02 - Burnley 0 - 1 Arsenal",
+    "gols": [
+      {"minuto": "93", "jogador": "Laurent Koscielny", "time": "Arsenal", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-10-15 - Chelsea 3 - 0 Leicester",
+    "gols": [
+      {"minuto": "7", "jogador": "Diego Costa", "time": "Chelsea", "tipo": "Finalization"},
+      {"minuto": "33", "jogador": "Eden Hazard", "time": "Chelsea", "tipo": "Finalization"},
+      {"minuto": "80", "jogador": "Victor Moses", "time": "Chelsea", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-10-17 - Liverpool 0 - 0 Manchester United",
+    "gols": []
+  },
+  {
+    "data": "2016-10-22 - Arsenal 0 - 0 Middlesbrough",
+    "gols": []
+  },
+  {
+    "data": "2016-10-22 - Liverpool 2 - 1 West Brom",
+    "gols": [
+      {"minuto": "20", "jogador": "Sadio Mané", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "35", "jogador": "Philippe Coutinho", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "81", "jogador": "Gareth McAuley", "time": "West Brom", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-10-29 - Sunderland 1 - 4 Arsenal",
+    "gols": [
+      {"minuto": "19", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Header"},
+      {"minuto": "65", "jogador": "Jermain Defoe", "time": "Sunderland", "tipo": "Penalty"},
+      {"minuto": "71", "jogador": "Olivier Giroud", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "76", "jogador": "Olivier Giroud", "time": "Arsenal", "tipo": "Header"},
+      {"minuto": "78", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-10-29 - Tottenham 1 - 1 Leicester",
+    "gols": [
+      {"minuto": "44", "jogador": "Vincent Janssen", "time": "Tottenham", "tipo": "Penalty"},
+      {"minuto": "48", "jogador": "Ahmed Musa", "time": "Leicester", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-10-29 - Crystal Palace 2 - 4 Liverpool",
+    "gols": [
+      {"minuto": "16", "jogador": "Emre Can", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "18", "jogador": "James McArthur", "time": "Crystal Palace", "tipo": "Header"},
+      {"minuto": "21", "jogador": "Dejan Lovren", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "33", "jogador": "James McArthur", "time": "Crystal Palace", "tipo": "Header"},
+      {"minuto": "44", "jogador": "Joel Matip", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "71", "jogador": "Roberto Firmino", "time": "Liverpool", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-11-06 - Liverpool 6 - 1 Watford",
+    "gols": [
+      {"minuto": "27", "jogador": "Sadio Mané", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "30", "jogador": "Philippe Coutinho", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "43", "jogador": "Emre Can", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "57", "jogador": "Roberto Firmino", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "60", "jogador": "Sadio Mané", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "75", "jogador": "Daryl Janmaat", "time": "Watford", "tipo": "Finalization"},
+      {"minuto": "91", "jogador": "Georginio Wijnaldum", "time": "Liverpool", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-11-06 - Leicester 1 - 2 West Brom",
+    "gols": [
+      {"minuto": "52", "jogador": "James Morrison", "time": "West Brom", "tipo": "Header"},
+      {"minuto": "55", "jogador": "Islam Slimani", "time": "Leicester", "tipo": "Header"},
+      {"minuto": "72", "jogador": "Matt Phillips", "time": "West Brom", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-11-19 - Manchester United 1 - 1 Arsenal",
+    "gols": [
+      {"minuto": "68", "jogador": "Juan Mata", "time": "Manchester United", "tipo": "Finalization"},
+      {"minuto": "89", "jogador": "Olivier Giroud", "time": "Arsenal", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2016-11-19 - Southampton 0 - 0 Liverpool",
+    "gols": []
+  },
+  {
+    "data": "2016-11-26 - Liverpool 2 - 0 Sunderland",
+    "gols": [
+      {"minuto": "75", "jogador": "Divock Origi", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "91", "jogador": "James Milner", "time": "Liverpool", "tipo": "Penalty"}
+    ]
+  },
+  {
+    "data": "2016-12-04 - Bournemouth 4 - 3 Liverpool",
+    "gols": [
+      {"minuto": "20", "jogador": "Sadio Mané", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "22", "jogador": "Divock Origi", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "56", "jogador": "Callum Wilson", "time": "Bournemouth", "tipo": "Penalty"},
+      {"minuto": "64", "jogador": "Emre Can", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "76", "jogador": "Ryan Fraser", "time": "Bournemouth", "tipo": "Finalization"},
+      {"minuto": "78", "jogador": "Steve Cook", "time": "Bournemouth", "tipo": "Finalization"},
+      {"minuto": "93", "jogador": "Nathan Aké", "time": "Bournemouth", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-12-10 - Leicester 4 - 2 Manchester City",
+    "gols": [
+      {"minuto": "3", "jogador": "Jamie Vardy", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "5", "jogador": "Andy King", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "20", "jogador": "Jamie Vardy", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "78", "jogador": "Jamie Vardy", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "82", "jogador": "Aleksandar Kolarov", "time": "Manchester City", "tipo": "Free kick"},
+      {"minuto": "90", "jogador": "Nolito", "time": "Manchester City", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-12-11 - Liverpool 2 - 2 West Ham",
+    "gols": [
+      {"minuto": "5", "jogador": "Adam Lallana", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "27", "jogador": "Dimitri Payet", "time": "West Ham", "tipo": "Free kick"},
+      {"minuto": "39", "jogador": "Michail Antonio", "time": "West Ham", "tipo": "Finalization"},
+      {"minuto": "48", "jogador": "Divock Origi", "time": "Liverpool", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-12-14 - Middlesbrough 0 - 3 Liverpool",
+    "gols": [
+      {"minuto": "29", "jogador": "Adam Lallana", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "60", "jogador": "Divock Origi", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "68", "jogador": "Adam Lallana", "time": "Liverpool", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-12-19 - Everton 0 - 1 Liverpool",
+    "gols": [
+      {"minuto": "94", "jogador": "Sadio Mané", "time": "Liverpool", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-12-27 - Liverpool 4 - 1 Stoke City",
+    "gols": [
+      {"minuto": "12", "jogador": "Jonathan Walters", "time": "Stoke City", "tipo": "Header"},
+      {"minuto": "34", "jogador": "Adam Lallana", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "44", "jogador": "Roberto Firmino", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "59", "jogador": "Giannelli Imbula (GC)", "time": "Liverpool", "tipo": "Own goal"},
+      {"minuto": "70", "jogador": "Daniel Sturridge", "time": "Liverpool", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2016-12-31 - Liverpool 1 - 0 Manchester City",
+    "gols": [
+      {"minuto": "8", "jogador": "Georginio Wijnaldum", "time": "Liverpool", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-01-02 - Middlesbrough 0 - 0 Leicester",
+    "gols": []
+  },
+  {
+    "data": "2017-01-02 - Sunderland 2 - 2 Liverpool",
+    "gols": [
+      {"minuto": "19", "jogador": "Daniel Sturridge", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "25", "jogador": "Jermain Defoe", "time": "Sunderland", "tipo": "Penalty"},
+      {"minuto": "72", "jogador": "Sadio Mané", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "84", "jogador": "Jermain Defoe", "time": "Sunderland", "tipo": "Penalty"}
+    ]
+  },
+  {
+    "data": "2017-01-03 - Bournemouth 3 - 3 Arsenal",
+    "gols": [
+      {"minuto": "16", "jogador": "Charlie Daniels", "time": "Bournemouth", "tipo": "Finalization"},
+      {"minuto": "20", "jogador": "Callum Wilson", "time": "Bournemouth", "tipo": "Penalty"},
+      {"minuto": "58", "jogador": "Ryan Fraser", "time": "Bournemouth", "tipo": "Finalization"},
+      {"minuto": "70", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Header"},
+      {"minuto": "75", "jogador": "Lucas Pérez", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "92", "jogador": "Olivier Giroud", "time": "Arsenal", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-01-14 - Leicester 0 - 3 Chelsea",
+    "gols": [
+      {"minuto": "6", "jogador": "Marcos Alonso", "time": "Chelsea", "tipo": "Finalization"},
+      {"minuto": "51", "jogador": "Marcos Alonso", "time": "Chelsea", "tipo": "Finalization"},
+      {"minuto": "71", "jogador": "Pedro", "time": "Chelsea", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-01-15 - Manchester United 1 - 1 Liverpool",
+    "gols": [
+      {"minuto": "27", "jogador": "James Milner", "time": "Liverpool", "tipo": "Penalty"},
+      {"minuto": "84", "jogador": "Zlatan Ibrahimović", "time": "Manchester United", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-01-21 - Liverpool 2 - 3 Swansea",
+    "gols": [
+      {"minuto": "48", "jogador": "Fernando Llorente", "time": "Swansea", "tipo": "Finalization"},
+      {"minuto": "52", "jogador": "Fernando Llorente", "time": "Swansea", "tipo": "Header"},
+      {"minuto": "55", "jogador": "Roberto Firmino", "time": "Liverpool", "tipo": "Header"},
+      {"minuto": "69", "jogador": "Roberto Firmino", "time": "Liverpool", "tipo": "Finalization"},
+      {"minuto": "74", "jogador": "Gylfi Sigurdsson", "time": "Swansea", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2017-01-22 - Arsenal 2 - 1 Burnley",
+    "gols": [
+      {"minuto": "59", "jogador": "Shkodran Mustafi", "time": "Arsenal", "tipo": "Header"},
+      {"minuto": "93", "jogador": "Andre Gray", "time": "Burnley", "tipo": "Penalty"},
+      {"minuto": "98", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Penalty"}
+    ]
+  },
+  {
+    "data": "2017-01-31 - Liverpool 1 - 1 Chelsea",
+    "gols": [
+      {"minuto": "24", "jogador": "David Luiz", "time": "Chelsea", "tipo": "Free kick"},
+      {"minuto": "57", "jogador": "Georginio Wijnaldum", "time": "Liverpool", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-02-04 - Chelsea 3 - 1 Arsenal",
+    "gols": [
+      {"minuto": "13", "jogador": "Marcos Alonso", "time": "Chelsea", "tipo": "Header"},
+      {"minuto": "53", "jogador": "Eden Hazard", "time": "Chelsea", "tipo": "Finalization"},
+      {"minuto": "85", "jogador": "Cesc Fàbregas", "time": "Chelsea", "tipo": "Finalization"},
+      {"minuto": "91", "jogador": "Olivier Giroud", "time": "Arsenal", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-02-27 - Leicester 3 - 1 Liverpool",
+    "gols": [
+      {"minuto": "28", "jogador": "Jamie Vardy", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "39", "jogador": "Danny Drinkwater", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "60", "jogador": "Jamie Vardy", "time": "Leicester", "tipo": "Header"},
+      {"minuto": "68", "jogador": "Philippe Coutinho", "time": "Liverpool", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2017-03-18 - West Brom 3 - 1 Arsenal",
+    "gols": [
+      {"minuto": "12", "jogador": "Craig Dawson", "time": "West Brom", "tipo": "Header"},
+      {"minuto": "15", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "55", "jogador": "Hal Robson-Kanu", "time": "West Brom", "tipo": "Finalization"},
+      {"minuto": "75", "jogador": "Craig Dawson", "time": "West Brom", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-04-02 - Arsenal 2 - 2 Manchester City",
+    "gols": [
+      {"minuto": "5", "jogador": "Leroy Sané", "time": "Manchester City", "tipo": "Finalization"},
+      {"minuto": "40", "jogador": "Theo Walcott", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "42", "jogador": "Sergio Agüero", "time": "Manchester City", "tipo": "Finalization"},
+      {"minuto": "53", "jogador": "Shkodran Mustafi", "time": "Arsenal", "tipo": "Header"}
+    ]
+  },
+  {
+    "data": "2017-04-09 - Everton 4 - 2 Leicester",
+    "gols": [
+      {"minuto": "1", "jogador": "Tom Davies", "time": "Everton", "tipo": "Finalization"},
+      {"minuto": "4", "jogador": "Islam Slimani", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "10", "jogador": "Marc Albrighton", "time": "Leicester", "tipo": "Free kick"},
+      {"minuto": "23", "jogador": "Romelu Lukaku", "time": "Everton", "tipo": "Header"},
+      {"minuto": "41", "jogador": "Phil Jagielka", "time": "Everton", "tipo": "Header"},
+      {"minuto": "57", "jogador": "Romelu Lukaku", "time": "Everton", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2017-04-10 - Crystal Palace 3 - 0 Arsenal",
+    "gols": [
+      {"minuto": "17", "jogador": "Andros Townsend", "time": "Crystal Palace", "tipo": "Finalization"},
+      {"minuto": "63", "jogador": "Yohan Cabaye", "time": "Crystal Palace", "tipo": "Finalization"},
+      {"minuto": "68", "jogador": "Luka Milivojevic", "time": "Crystal Palace", "tipo": "Penalty"}
+    ]
+  },
+  {
+    "data": "2017-04-26 - Arsenal 1 - 0 Leicester",
+    "gols": [
+      {"minuto": "86", "jogador": "Robert Huth (GC)", "time": "Arsenal", "tipo": "Own goal"}
+    ]
+  },
+  {
+    "data": "2017-04-30 - Tottenham 2 - 0 Arsenal",
+    "gols": [
+      {"minuto": "55", "jogador": "Dele Alli", "time": "Tottenham", "tipo": "Finalization"},
+      {"minuto": "58", "jogador": "Harry Kane", "time": "Tottenham", "tipo": "Penalty"}
+    ]
+  },
+  {
+    "data": "2017-05-06 - Leicester 3 - 0 Watford",
+    "gols": [
+      {"minuto": "38", "jogador": "Wilfred Ndidi", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "58", "jogador": "Riyad Mahrez", "time": "Leicester", "tipo": "Finalization"},
+      {"minuto": "93", "jogador": "Marc Albrighton", "time": "Leicester", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2017-05-13 - Manchester City 2 - 1 Leicester",
+    "gols": [
+      {"minuto": "29", "jogador": "David Silva", "time": "Manchester City", "tipo": "Finalization"},
+      {"minuto": "36", "jogador": "Gabriel Jesus", "time": "Manchester City", "tipo": "Penalty"},
+      {"minuto": "42", "jogador": "Shinji Okazaki", "time": "Leicester", "tipo": "Finalization"}
+    ]
+  },
+  {
+    "data": "2017-05-13 - Stoke City 1 - 4 Arsenal",
+    "gols": [
+      {"minuto": "42", "jogador": "Olivier Giroud", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "55", "jogador": "Mesut Özil", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "67", "jogador": "Peter Crouch", "time": "Stoke City", "tipo": "Finalization"},
+      {"minuto": "76", "jogador": "Alexis Sánchez", "time": "Arsenal", "tipo": "Finalization"},
+      {"minuto": "80", "jogador": "Olivier Giroud", "time": "Arsenal", "tipo": "Finalization"}
+    ]
+  }
+]
