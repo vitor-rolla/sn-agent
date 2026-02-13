@@ -1,0 +1,569 @@
+{
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-09-17 - Hull City 1 - 4 Arsenal/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-14 - Leicester 0 - 3 Chelsea/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 93,
+                "player": "Kasper Schmeichel",
+                "club": "Leicester City",
+                "type": "Own goal"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-01 - Swansea 1 - 2 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 32,
+                "player": "Gylfi Sigurdsson",
+                "club": "Swansea City",
+                "type": "Header"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-22 - Liverpool 2 - 1 West Brom/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 15,
+                "player": "Sadio Mane",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 30,
+                "player": "Philippe Coutinho",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-08-14 - Arsenal 3 - 4 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 32,
+                "player": "Alexis Sánchez",
+                "club": "Arsenal",
+                "type": "Finalization"
+            },
+            {
+                "minute": 93,
+                "player": "Philippe Coutinho",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-29 - Crystal Palace 2 - 4 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 4,
+                "player": "Joel Matip",
+                "club": "Liverpool",
+                "type": "Header"
+            },
+            {
+                "minute": 35,
+                "player": "Scott Loughran",
+                "club": "Liverpool",
+                "type": "Header"
+            },
+            {
+                "minute": 44,
+                "player": "Philippe Coutinho",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-05-13 - Manchester City 2 - 1 Leicester/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-15 - Chelsea 3 - 0 Leicester/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 45,
+                "player": "Eden Hazard",
+                "club": "Chelsea",
+                "type": "Finalization"
+            },
+            {
+                "minute": 85,
+                "player": "Eden Hazard",
+                "club": "Chelsea",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-05-13 - Stoke City 1 - 4 Arsenal/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 25,
+                "player": "Olivier Giroud",
+                "club": "Arsenal",
+                "type": "Finalization"
+            },
+            {
+                "minute": 45,
+                "player": "Jack Grealish",
+                "club": "Stoke City",
+                "type": "Header"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-12-10 - Leicester 4 - 2 Manchester City/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 20,
+                "player": "Daniel Silva",
+                "club": "Leicester City",
+                "type": "Finalization"
+            },
+            {
+                "minute": 28,
+                "player": "Christian Fuchs",
+                "club": "Leicester City",
+                "type": "Finalization"
+            },
+            {
+                "minute": 35,
+                "player": "Youri Tielemans",
+                "club": "Leicester City",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-15 - Manchester United 1 - 1 Liverpool/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-29 - Sunderland 1 - 4 Arsenal/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 12,
+                "player": "Mesut Özil",
+                "club": "Arsenal",
+                "type": "Finalization"
+            },
+            {
+                "minute": 45,
+                "player": "Alexis Sánchez",
+                "club": "Arsenal",
+                "type": "Finalization"
+            },
+            {
+                "minute": 67,
+                "player": "Jack Wilshere",
+                "club": "Arsenal",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-04-10 - Crystal Palace 3 - 0 Arsenal/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 12,
+                "player": "Andros Townsend",
+                "club": "Crystal Palace",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-02-27 - Leicester 3 - 1 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 46,
+                "player": "Jamie Vardy",
+                "club": "Leicester City",
+                "type": "Finalization"
+            },
+            {
+                "minute": 55,
+                "player": "Danny Drinkwater",
+                "club": "Leicester City",
+                "type": "Finalization"
+            },
+            {
+                "minute": 68,
+                "player": "Sadio Mané",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 82,
+                "player": "Mohamed Salah",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 89,
+                "player": "Christian Fuchs",
+                "club": "Leicester City",
+                "type": "Header"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-09-10 - Arsenal 2 - 1 Southampton/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-02 - Sunderland 2 - 2 Liverpool/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-12-19 - Everton 0 - 1 Liverpool/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-12-14 - Middlesbrough 0 - 3 Liverpool/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-12-27 - Liverpool 4 - 1 Stoke City/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 15,
+                "player": "Adam Lallana",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 45,
+                "player": "Adam Lallana",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-04-30 - Tottenham 2 - 0 Arsenal/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-17 - Liverpool 0 - 0 Manchester United/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-12-04 - Bournemouth 4 - 3 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 15,
+                "player": "Lucas Leiva",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 21,
+                "player": "Divock Origi",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-31 - Liverpool 1 - 1 Chelsea/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 27,
+                "player": "David Luiz",
+                "club": "Chelsea",
+                "type": "Free kick"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-22 - Arsenal 2 - 1 Burnley/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-08-20 - Burnley 2 - 0 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 26,
+                "player": "Stephen Defoe",
+                "club": "Burnley",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-04-02 - Arsenal 2 - 2 Manchester City/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 10,
+                "player": "Raheem Sterling",
+                "club": "Manchester City",
+                "type": "Finalization"
+            },
+            {
+                "minute": 35,
+                "player": "Alexis Sánchez",
+                "club": "Arsenal",
+                "type": "Header"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-11-06 - Leicester 1 - 2 West Brom/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 76,
+                "player": "Wilfred Ndidi",
+                "club": "Leicester City",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-03-18 - West Brom 3 - 1 Arsenal/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 12,
+                "player": "Callum McLean",
+                "club": "West Bromwich Albion",
+                "type": "Header"
+            },
+            {
+                "minute": 15,
+                "player": "Alexis Sánchez",
+                "club": "Arsenal",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-02 - Middlesbrough 0 - 0 Leicester/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-08-27 - Tottenham 1 - 1 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 30,
+                "player": "James Milner",
+                "club": "Liverpool",
+                "type": "Penalty"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-09-24 - Arsenal 3 - 0 Chelsea/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 15,
+                "player": "Theo Walcott",
+                "club": "Arsenal",
+                "type": "Finalization"
+            },
+            {
+                "minute": 28,
+                "player": "Mesut Özil",
+                "club": "Arsenal",
+                "type": "Finalization"
+            },
+            {
+                "minute": 35,
+                "player": "Alexis Sánchez",
+                "club": "Arsenal",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-05-06 - Leicester 3 - 0 Watford/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 45,
+                "player": "Venditti",
+                "club": "Leicester City",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-04-26 - Arsenal 1 - 0 Leicester/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-11-26 - Liverpool 2 - 0 Sunderland/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-22 - Arsenal 0 - 0 Middlesbrough/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-12-11 - Liverpool 2 - 2 West Ham/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-02-04 - Chelsea 3 - 1 Arsenal/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-04-09 - Everton 4 - 2 Leicester/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 46,
+                "player": "Tom Davies",
+                "club": "Everton",
+                "type": "Finalization"
+            },
+            {
+                "minute": 62,
+                "player": "Wes Morgan",
+                "club": "Leicester City",
+                "type": "Header"
+            },
+            {
+                "minute": 75,
+                "player": "Phil Jagielka",
+                "club": "Everton",
+                "type": "Header"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-11-06 - Liverpool 6 - 1 Watford/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 45,
+                "player": "Filipe Coutinho",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 52,
+                "player": "Emre Can",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-09-16 - Chelsea 1 - 2 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 15,
+                "player": "Dejan Lovren",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 30,
+                "player": "Jordan Henderson",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 45,
+                "player": "Adam Lallana",
+                "club": "Liverpool",
+                "type": "Own goal"
+            },
+            {
+                "minute": 90,
+                "player": "Willian",
+                "club": "Chelsea",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-11-19 - Southampton 0 - 0 Liverpool/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 5,
+                "player": "Mohamed Salah",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 36,
+                "player": "Adam Lallana",
+                "club": "Southampton",
+                "type": "Header"
+            },
+            {
+                "minute": 52,
+                "player": "Sadio Mané",
+                "club": "Liverpool",
+                "type": "Finalization"
+            },
+            {
+                "minute": 63,
+                "player": "Virgil van Dijk",
+                "club": "Liverpool",
+                "type": "Header"
+            },
+            {
+                "minute": 93,
+                "player": "Mohamed Salah",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-03 - Bournemouth 3 - 3 Arsenal/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 15,
+                "player": "Callum Wilson",
+                "club": "Arsenal",
+                "type": "Penalty"
+            },
+            {
+                "minute": 28,
+                "player": "Stanislas",
+                "club": "Bournemouth",
+                "type": "Header"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2017-01-21 - Liverpool 2 - 3 Swansea/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-29 - Tottenham 1 - 1 Leicester/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 32,
+                "player": "Christian Fuchs",
+                "club": "Leicester City",
+                "type": "Finalization"
+            },
+            {
+                "minute": 45,
+                "player": "Vincent Jansen",
+                "club": "Tottenham Hotspur",
+                "type": "Penalty"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-09-24 - Manchester United 4 - 1 Leicester/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 46,
+                "player": "Chris Smalling",
+                "club": "Manchester United",
+                "type": "Header"
+            },
+            {
+                "minute": 55,
+                "player": "Juan Mata",
+                "club": "Manchester United",
+                "type": "Finalization"
+            },
+            {
+                "minute": 68,
+                "player": "Paul Pogba",
+                "club": "Manchester United",
+                "type": "Header"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-12-31 - Liverpool 1 - 0 Manchester City/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 35,
+                "player": "Raheem Sterling",
+                "club": "Liverpool",
+                "type": "Finalization"
+            }
+        ]
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-11-19 - Manchester United 1 - 1 Arsenal/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-08-20 - Leicester 0 - 0 Arsenal/n_consolidated.txt": {
+        "gols": []
+    },
+    "/home/vitor-rolla/ml_projects/sn-agent/data/Dataset_complete/2016-10-02 - Burnley 0 - 1 Arsenal/n_consolidated.txt": {
+        "gols": [
+            {
+                "minute": 52,
+                "player": "Matthew Lowton",
+                "club": "Burnley",
+                "type": "Finalization"
+            },
+            {
+                "minute": 67,
+                "player": "Bukayo Saka",
+                "club": "Arsenal",
+                "type": "Finalization"
+            }
+        ]
+    }
+}

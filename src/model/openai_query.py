@@ -6,7 +6,7 @@ from openai import OpenAI
 import glob
 import tomllib
 
-model_name = "gpt-4o-mini"
+model_name = "gpt-5-nano"
 
 # Load API key from ~/.streamlit/secrets.toml
 secrets_path = os.path.expanduser("~/.streamlit/secrets.toml")
@@ -43,12 +43,18 @@ def gerar_resposta_llm(narrativa):
             messages=[
                 {
                     "role": "system",
-                    "content": "Extract soccer goals from the narrative. Only include goals clearly mentioned."
+                    "content": """Role: You are a specialized Soccer Data Analyst. Your task is to extract real-time goal events from match narratives into a structured format.
+                        Extraction Logic & Constraints:
+                        - Deduplication: Extract each goal ONLY ONCE. Distinguish between live action and subsequent recaps/summaries.
+                        - Validation: Only include confirmed goals. Ignore disallowed goals (VAR/Offside).
+                        - Minute: Use integers (0-100). For stoppage time like 90+3, use 93.
+                        - Goal Type: Strictly use: "Finalization", "Header", "Penalty", "Free kick", "Own goal", "Bicycle".
+                        - Own Goals: Identify carefully; the 'club' field must be the team that gained the point."""
                 },
                 {"role": "user", "content": narrativa}
             ],
             response_format=ListaGols, # Passa a classe diretamente aqui
-            temperature=0, # Recomendado para extração de dados
+            #temperature=0.1, # Recomendado para extração de dados
         )
         return completion.choices[0].message.parsed
     except Exception as e:
@@ -73,7 +79,7 @@ def processar_narrativas(lista_arquivos: List[str]):
             resultados_globais[caminho_arquivo] = {"gols": []}
     return resultados_globais
 
-narrative_files = glob.glob(os.path.join(os.getcwd(), 'data/Dataset_complete/**', '*.txt'), recursive=True)
+narrative_files = glob.glob(os.path.join(os.getcwd(), 'data/Dataset_complete/**', 'n_consolidated.txt'), recursive=True)
 
 dicionario_final = processar_narrativas(narrative_files)
 

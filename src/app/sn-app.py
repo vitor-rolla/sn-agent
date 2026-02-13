@@ -25,16 +25,26 @@ with st.sidebar:
     )
     st.info("The audio is processed via Whisper API to optimize performance and memory usage.")
 
-# User Input
 video_url = st.text_input("Paste the YouTube video URL here:")
+
+ydl_opts = {
+    'skip_download': True,        # Não baixa o vídeo
+    'writesubtitles': True,       # Baixa as legendas feitas por humanos
+    'writeautomaticsub': True,   # Baixa as legendas automáticas (se as manuais não existirem)
+    'subtitleslangs': ['pt', 'en'], # Idiomas desejados (ex: português e inglês)
+    'subtitlesformat': 'srt',     # Formato de saída preferencial
+    'outtmpl': '%(title)s.%(ext)s', # Nome do arquivo de saída
+}
+
 
 if video_url:
     try:
-        # 1. Metadata Extraction (Thumbnail and Title)
-        with yt_dlp.YoutubeDL() as ydl:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(video_url, download=False)
             title = info.get('title', 'No Title Found')
             thumbnail = info.get('thumbnail')
+            narrative = info.get('subtitles')
+            print(info)
 
         st.subheader(f"📺 {title}")
         st.image(thumbnail, use_container_width=True)

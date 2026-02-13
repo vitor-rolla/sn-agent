@@ -2,7 +2,7 @@ import json
 import re
 from difflib import SequenceMatcher
 
-model_name = "gpt-4o-mini"
+model_name = "ministral-3:14b"
 
 def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -86,7 +86,7 @@ print("-" * 30)
 print(f"Gols no Gabarito: {report['counts']['total_gt_goals']}")
 print(f"Gols Extraídos: {report['counts']['total_pred_goals']}")
 print(f"Gols validados (TP): {report['counts']['correct_goals']}")
-print("### RELATÓRIO DE MÉTRICAS ###")
+print("-" * 30)
 print(f"F1-Score Geral: {report['metrics']['f1_score']:.2%}")
 print(f"Jogos com Placar Exato (100% acerto): {report['counts']['perfect_matches']}")
 print(f"Total de jogos analisados: {report['counts']['matches_found']}")

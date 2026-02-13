@@ -1,7 +1,7 @@
 import json
 import os
 
-model_name = "gpt-4o-mini"
+model_name = "ministral-3:14b"
 
 data = json.load(open(f'data/results/{model_name}/raw_results.json')) 
 
