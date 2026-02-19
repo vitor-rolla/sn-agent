@@ -6,7 +6,8 @@ from openai import OpenAI
 import glob
 import tomllib
 
-model_name = "gpt-5-nano"
+model_name = "gpt-4o-mini"
+prompt_name = "literal"
 
 # Load API key from ~/.streamlit/secrets.toml
 secrets_path = os.path.expanduser("~/.streamlit/secrets.toml")
@@ -32,24 +33,35 @@ class ListaGols(BaseModel):
     gols: List[Gol]
 
 
-def gerar_resposta_llm(narrativa):
+def carregar_prompt(prompt_name: str = "default") -> str:
+    caminho_prompt = os.path.join(os.getcwd(), f"data/prompts/{prompt_name}.txt")
+    
+    if not os.path.exists(caminho_prompt):
+        raise FileNotFoundError(f"Arquivo de prompt não encontrado: {caminho_prompt}")
+    
+    with open(caminho_prompt, "r", encoding="utf-8") as f:
+        return f.read()
+
+
+def gerar_resposta_llm(narrativa, prompt_name: str = "default"):
     """
     Usa Structured Outputs (SDK v1.40+) para garantir fidelidade ao Pydantic.
+    
+    Args:
+        narrativa: Texto da narrativa do jogo
+        prompt_name: Nome do arquivo de prompt a usar (sem extensão .txt)
     """
     try:
+        # Carrega o prompt do arquivo
+        prompt_content = carregar_prompt(prompt_name)
+        
         # O método .parse substitui o .create quando usamos Pydantic
         completion = client.beta.chat.completions.parse(
             model=model_name,
             messages=[
                 {
                     "role": "system",
-                    "content": """Role: You are a specialized Soccer Data Analyst. Your task is to extract real-time goal events from match narratives into a structured format.
-                        Extraction Logic & Constraints:
-                        - Deduplication: Extract each goal ONLY ONCE. Distinguish between live action and subsequent recaps/summaries.
-                        - Validation: Only include confirmed goals. Ignore disallowed goals (VAR/Offside).
-                        - Minute: Use integers (0-100). For stoppage time like 90+3, use 93.
-                        - Goal Type: Strictly use: "Finalization", "Header", "Penalty", "Free kick", "Own goal", "Bicycle".
-                        - Own Goals: Identify carefully; the 'club' field must be the team that gained the point."""
+                    "content": prompt_content
                 },
                 {"role": "user", "content": narrativa}
             ],
@@ -70,7 +82,7 @@ def processar_narrativas(lista_arquivos: List[str]):
         with open(caminho_arquivo, "r", encoding="utf-8") as f:
             narrativa = f.read()
         # Agora a validação acontece dentro da chamada da API
-        objeto_gols = gerar_resposta_llm(narrativa)
+        objeto_gols = gerar_resposta_llm(narrativa, prompt_name=prompt_name)
         if objeto_gols:
             # .model_dump() transforma o objeto Pydantic em dicionário Python
             resultados_globais[caminho_arquivo] = objeto_gols.model_dump()
@@ -83,5 +95,5 @@ narrative_files = glob.glob(os.path.join(os.getcwd(), 'data/Dataset_complete/**'
 
 dicionario_final = processar_narrativas(narrative_files)
 
-with open(f'data/results/{model_name}/raw_results.json', 'w', encoding='utf-8') as f:
+with open(f'data/results/{model_name}/{prompt_name}/raw_results.json', 'w', encoding='utf-8') as f:
     json.dump(dicionario_final, f, indent=4, ensure_ascii=False)

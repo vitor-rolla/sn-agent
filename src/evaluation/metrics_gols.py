@@ -2,7 +2,9 @@ import json
 import re
 from difflib import SequenceMatcher
 
-model_name = "ministral-3:14b"
+model_name = "gpt-4o-mini"
+prompt_name = "literal"
+
 
 def load_json(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -76,7 +78,7 @@ def analyze_performance(gt_data, pred_data):
     }
 
 gt = load_json('data/ground_truth.json')
-pred = load_json(f'data/results/{model_name}/final_results.json')
+pred = load_json(f'data/results/{model_name}/{prompt_name}/final_results.json')
 report = analyze_performance(gt, pred)
 print("### RELATÓRIO DE MÉTRICAS ###")
 print(f"F1-Score Geral: {report['metrics']['f1_score']:.2%}")

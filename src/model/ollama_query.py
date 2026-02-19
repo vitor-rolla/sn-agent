@@ -6,6 +6,8 @@ import requests
 import glob
 
 model_name = "ministral-3:14b"
+prompt_name = "literal"
+
 ollama_api_url = "http://10.105.158.17:11434"  # Ollama server URL
 #ollama_api_url = "http://localhost:11434"  # Ollama server URL
 
@@ -25,17 +27,22 @@ class ListaGols(BaseModel):
     gols: List[Gol]
 
 
-def gerar_resposta_llm(narrativa, previous_output=None, error_msg=None):
+def carregar_prompt(prompt_name: str = "default") -> str:
+    caminho_prompt = os.path.join(os.getcwd(), f"data/prompts/{prompt_name}.txt")
+    
+    if not os.path.exists(caminho_prompt):
+        raise FileNotFoundError(f"Arquivo de prompt não encontrado: {caminho_prompt}")
+    
+    with open(caminho_prompt, "r", encoding="utf-8") as f:
+        return f.read()
+
+
+def gerar_resposta_llm(narrativa, prompt_name, previous_output=None, error_msg=None):
     # Endpoint de CHAT é mais organizado que o de GENERATE
     url = f"{ollama_api_url}/api/chat"
     
-    system_content = """Role: You are a specialized Soccer Data Analyst. Your task is to extract real-time goal events from match narratives into a structured format.
-                        Extraction Logic & Constraints:
-                        - Deduplication: Extract each goal ONLY ONCE. Distinguish between live action and subsequent recaps/summaries.
-                        - Validation: Only include confirmed goals. Ignore disallowed goals (VAR/Offside).
-                        - Minute: Use integers (0-100). For stoppage time like 90+3, use 93.
-                        - Goal Type: Strictly use: "Finalization", "Header", "Penalty", "Free kick", "Own goal", "Bicycle".
-                        - Own Goals: Identify carefully; the 'club' field must be the team that gained the point."""
+    # Carrega o prompt do arquivo
+    system_content = carregar_prompt(prompt_name)
 
     messages = [
         {"role": "system", "content": system_content},
@@ -91,7 +98,7 @@ def processar_narrativas(lista_arquivos: List[str], max_retries=3):
         error_msg = None
 
         for tentativa in range(1, max_retries + 1):
-            raw_output = gerar_resposta_llm(narrativa, previous_output=raw_output, error_msg=error_msg)
+            raw_output = gerar_resposta_llm(narrativa, prompt_name, previous_output=raw_output, error_msg=error_msg)
             
             try:
                 # Validação rigorosa com Pydantic
