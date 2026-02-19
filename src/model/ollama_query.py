@@ -5,11 +5,11 @@ from pydantic import BaseModel, Field, ValidationError
 import requests
 import glob
 
-model_name = "ministral-3:14b"
+model_name = "gemma3:12b"
 prompt_name = "literal"
 
 ollama_api_url = "http://10.105.158.17:11434"  # Ollama server URL
-#ollama_api_url = "http://localhost:11434"  # Ollama server URL
+# ollama_api_url = "http://localhost:11434"  # Ollama server URL
 
 class Gol(BaseModel):
     minute: int = Field(
@@ -69,7 +69,7 @@ def gerar_resposta_llm(narrativa, prompt_name, previous_output=None, error_msg=N
         "stream": False,
         "format": "json",
         "options": {
-            "temperature": 0.3,
+            "temperature": 0.1,
             "top_p": 0.9,
             "num_predict": 500,
         }
@@ -124,6 +124,9 @@ narrative_files = glob.glob(os.path.join(os.getcwd(), 'data/Dataset_complete/**'
 
 dicionario_final = processar_narrativas(narrative_files)
 
-with open(f'data/results/{model_name}/raw_results.json', 'w', encoding='utf-8') as f:
+output_path = f'data/results/{model_name}/{prompt_name}/raw_results.json'
+os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(dicionario_final, f, indent=4, ensure_ascii=False)
 

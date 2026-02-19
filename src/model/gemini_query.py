@@ -1,27 +1,29 @@
 import json
 import os
-from typing import List, Literal
-from pydantic import BaseModel, Field, ValidationError
-from openai import OpenAI
 import glob
 import tomllib
+from typing import List, Literal
+from pydantic import BaseModel, Field
+import google.generativeai as genai
 
-model_name = "gpt-4o-mini"
-prompt_name = "literal"
+# Configurações de modelo
+model_name = "gemini-2.5-flash-lite"
+prompt_name = "complex"
 
 # Load API key from ~/.streamlit/secrets.toml
 secrets_path = os.path.expanduser("~/.streamlit/secrets.toml")
 with open(secrets_path, "rb") as f:
     secrets = tomllib.load(f)
-    openai_api_key = secrets["OPENAI_API_KEY"]
+    # Certifique-se de que a chave no .toml seja GEMINI_API_KEY ou ajuste abaixo
+    gemini_api_key = secrets.get("GEMINI_API_KEY") or secrets.get("OPENAI_API_KEY")
 
-client = OpenAI(api_key=openai_api_key)
+genai.configure(api_key=gemini_api_key)
+
+# --- Definição dos Schemas (Pydantic) ---
 
 class Gol(BaseModel):
     minute: int = Field(
-        description="Game minute as an integer (0-100)", 
-        ge=0, 
-        le=100
+        description="Game minute as an integer (0-100)"
     )
     player: str = Field(description="Player who scored the goal")
     club: str = Field(description="Player's club")
@@ -32,45 +34,44 @@ class Gol(BaseModel):
 class ListaGols(BaseModel):
     gols: List[Gol]
 
+# --- Funções de Apoio ---
 
 def carregar_prompt(prompt_name: str = "default") -> str:
     caminho_prompt = os.path.join(os.getcwd(), f"data/prompts/{prompt_name}.txt")
-    
     if not os.path.exists(caminho_prompt):
         raise FileNotFoundError(f"Arquivo de prompt não encontrado: {caminho_prompt}")
-    
     with open(caminho_prompt, "r", encoding="utf-8") as f:
         return f.read()
 
-
 def gerar_resposta_llm(narrativa, prompt_name: str = "default"):
     """
-    Usa Structured Outputs (SDK v1.40+) para garantir fidelidade ao Pydantic.
-    
-    Args:
-        narrativa: Texto da narrativa do jogo
-        prompt_name: Nome do arquivo de prompt a usar (sem extensão .txt)
+    Usa o SDK do Google Generative AI com response_mime_type 
+    para garantir o retorno estruturado via Pydantic.
     """
     try:
-        # Carrega o prompt do arquivo
         prompt_content = carregar_prompt(prompt_name)
         
-        # O método .parse substitui o .create quando usamos Pydantic
-        completion = client.beta.chat.completions.parse(
-            model=model_name,
-            messages=[
-                {
-                    "role": "system",
-                    "content": prompt_content
-                },
-                {"role": "user", "content": narrativa}
-            ],
-            response_format=ListaGols, # Passa a classe diretamente aqui
-            #temperature=0.1, # Recomendado para extração de dados
+        # Inicializa o modelo com a configuração de resposta estruturada
+        model = genai.GenerativeModel(
+            model_name=model_name,
+            system_instruction=prompt_content
         )
-        return completion.choices[0].message.parsed
+        
+        # O Gemini usa 'response_schema' para garantir a estrutura
+        response = model.generate_content(
+            narrativa,
+            generation_config=genai.GenerationConfig(
+                response_mime_type="application/json",
+                response_schema=ListaGols,
+                temperature=0.1
+            )
+        )
+        
+        # Converte a string JSON de resposta de volta para o objeto Pydantic
+        return ListaGols.model_validate_json(response.text)
+        
     except Exception as e:
-        print(f"❌ Erro crítico na API: {e}")
+        print(f"❌ Erro crítico na API Gemini: {e}")
         return None
 
 def processar_narrativas(lista_arquivos: List[str]):
@@ -78,18 +79,20 @@ def processar_narrativas(lista_arquivos: List[str]):
     for caminho_arquivo in lista_arquivos:
         if not os.path.exists(caminho_arquivo):
             continue
+            
         print(f"Processando: {os.path.basename(caminho_arquivo)}...")
         with open(caminho_arquivo, "r", encoding="utf-8") as f:
             narrativa = f.read()
-        # Agora a validação acontece dentro da chamada da API
+            
         objeto_gols = gerar_resposta_llm(narrativa, prompt_name=prompt_name)
+
         if objeto_gols:
-            # .model_dump() transforma o objeto Pydantic em dicionário Python
             resultados_globais[caminho_arquivo] = objeto_gols.model_dump()
         else:
-            # Caso a API falhe por algum motivo externo
             resultados_globais[caminho_arquivo] = {"gols": []}
+            
     return resultados_globais
+
 
 narrative_files = glob.glob(os.path.join(os.getcwd(), 'data/Dataset_complete/**', 'n_consolidated.txt'), recursive=True)
 
@@ -100,3 +103,4 @@ os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(dicionario_final, f, indent=4, ensure_ascii=False)
+

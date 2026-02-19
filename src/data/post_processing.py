@@ -1,8 +1,8 @@
 import json
 import os
 
-model_name = "gpt-4o-mini"
-prompt_name = "literal"
+model_name = "gemini-2.5-flash-lite"
+prompt_name = "complex"
 
 data = json.load(open(f'data/results/{model_name}/{prompt_name}/raw_results.json')) 
 

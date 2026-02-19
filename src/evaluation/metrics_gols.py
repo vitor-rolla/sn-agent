@@ -2,8 +2,8 @@ import json
 import re
 from difflib import SequenceMatcher
 
-model_name = "gpt-4o-mini"
-prompt_name = "literal"
+model_name = "gemini-2.5-flash-lite"
+prompt_name = "default"
 
 
 def load_json(filepath):
@@ -11,7 +11,6 @@ def load_json(filepath):
         return json.load(f)
 
 def normalize_name(name):
-    """Remove acentos e padroniza nomes para comparação."""
     if not name: return ""
     return re.sub(r'[^\w\s]', '', name).lower().strip()
 
