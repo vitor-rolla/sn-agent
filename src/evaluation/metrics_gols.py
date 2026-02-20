@@ -2,8 +2,8 @@ import json
 import re
 from difflib import SequenceMatcher
 
-model_name = "gemini-2.5-flash-lite"
-prompt_name = "default"
+model_name = "gemini-3-flash-preview"
+prompt_name = "complex"
 
 
 def load_json(filepath):

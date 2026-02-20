@@ -1,8 +1,9 @@
 import json
 import os
 
-model_name = "gemini-2.5-flash-lite"
-prompt_name = "complex"
+model_name = "gemini-3-pro-preview"
+prompt_name = "default"
+
 
 data = json.load(open(f'data/results/{model_name}/{prompt_name}/raw_results.json')) 
 

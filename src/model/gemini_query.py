@@ -7,8 +7,8 @@ from pydantic import BaseModel, Field
 import google.generativeai as genai
 
 # Configurações de modelo
-model_name = "gemini-2.5-flash-lite"
-prompt_name = "complex"
+model_name = "gemini-3.1-pro-preview"
+prompt_name = "default"
 
 # Load API key from ~/.streamlit/secrets.toml
 secrets_path = os.path.expanduser("~/.streamlit/secrets.toml")
