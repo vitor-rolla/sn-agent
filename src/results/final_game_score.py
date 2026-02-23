@@ -5,22 +5,21 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.patches as mpatches
 
-
-
-
-
 data = {
-    "gemini-2.5-flash-lite": [,,],
-    "gemini-2.5-flash": [,,],
-    "gpt-4o-mini": [,,] ,
-    "gpt-4o": [,,],
+    "Gemini-3.1-pro-preview": [81.63, 75.51, 67.35],
+    "Gemini-3-flash-preview": [91.84, 93.88, 55.1],
+    "Gemini-2.5-flash":       [63.27, 69.39, 63.27],
+    "Gemini-2.5-flash-lite":  [40.82, 24.49, 10.2],
+    "Gpt-4o":                 [71.43, 81.63, 48.98],
+    "Gpt-4o-mini":            [42.86, 51.02, 20.41],
+    "Gpt-5-nano":             [32.65, 24.49, 22.45]
 }
 #"gpt-5-nano": [,,],
 
 index = [
-    "Default",
-    "Literal",
-    "Complex",
+"Default",
+"Literal",
+"Complex"
 ]
 
 df = pd.DataFrame(data, index=index)
@@ -38,7 +37,7 @@ colors = [
     "#509995", "#397885", "#225876", "#0b3866"
 ]
 
-custom_hatches = ["/", "\\", "xx", "---", "////", "x", "\\\\\\\\"]
+custom_hatches = ["//", "\\\\", "xxx", "-----", "//////", "xx", "\\\\\\\\\\\\\\\\"]
 
 sns.set(style="whitegrid")
 plt.rcParams["font.family"] = "DejaVu Serif"
@@ -82,8 +81,8 @@ for container in bar_plot.containers:
 # -------------------------
 # Labels and formatting
 # -------------------------
-plt.xlabel("Evaluation Metric", size=20, labelpad=10)
-plt.ylabel("Score (%)", size=20)
+plt.xlabel("prompt type", size=20, labelpad=10)
+plt.ylabel("score (%)", size=20)
 
 plt.tick_params(axis='y', labelsize=14)
 plt.tick_params(axis='x', labelsize=14)

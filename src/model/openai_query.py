@@ -6,8 +6,8 @@ from openai import OpenAI
 import glob
 import tomllib
 
-model_name = "gpt-4o-mini"
-prompt_name = "literal"
+model_name = "o3"
+prompt_name = "default"
 
 # Load API key from ~/.streamlit/secrets.toml
 secrets_path = os.path.expanduser("~/.streamlit/secrets.toml")

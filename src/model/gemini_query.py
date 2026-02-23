@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 import google.generativeai as genai
 
 # Configurações de modelo
-model_name = "gemini-3.1-pro-preview"
+model_name = "gemini-2.5-pro"
 prompt_name = "default"
 
 # Load API key from ~/.streamlit/secrets.toml

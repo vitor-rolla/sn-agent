@@ -2,8 +2,8 @@ import json
 import re
 from difflib import SequenceMatcher
 
-model_name = "gemini-3-flash-preview"
-prompt_name = "complex"
+model_name = "o3"
+prompt_name = "default"
 
 
 def load_json(filepath):
@@ -45,8 +45,14 @@ def analyze_performance(gt_data, pred_data):
                     if i in matched_gt_indices: continue
                     player_score = similarity(p_gol['player'], g_gol['jogador'])
                     team_score = similarity(p_gol['club'], g_gol['time'])
-                    # player_score = similarity(p_gol.get('player', ''), g_gol.get('jogador', ''))
-                    # team_score = similarity(p_gol.get('team', ''), g_gol.get('time', ''))
+                    type_score = similarity(p_gol.get('type', ''), g_gol.get('tipo', ''))
+                    minute_score = abs(int(p_gol['minute']) - int(g_gol['minuto']))
+                    if minute_score < 1:
+                        minute_score = 1.0
+                    else:
+                        minute_score = 0.0
+                    print(minute_score)
+                    combined_score = (player_score * team_score * type_score * minute_score)
                     combined_score = (player_score * team_score)
                     # print(p_gol['player'], g_gol['jogador'])
                     if combined_score > best_score:

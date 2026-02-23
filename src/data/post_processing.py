@@ -1,7 +1,7 @@
 import json
 import os
 
-model_name = "gemini-3-pro-preview"
+model_name = "o3"
 prompt_name = "default"
 
 
