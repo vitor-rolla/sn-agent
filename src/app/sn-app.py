@@ -220,7 +220,7 @@ with tab1:
                         try:
                             if model == "gemini-3-flash-preview":
                                 # Use Google Gemini
-                                gemini_model = genai.GenerativeModel('ggemini-3-flash-previewe')
+                                gemini_model = genai.GenerativeModel('gemini-3-flash-preview')
                                 full_prompt = f"{prompt_template}\n\nSubtitles:\n{subtitle_text}\nYour answer should only include the game's final score and goals, as requested in the prompt."
                                 gemini_response = gemini_model.generate_content(full_prompt)
                                 st.session_state.analysis = gemini_response.text
