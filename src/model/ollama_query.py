@@ -5,11 +5,11 @@ from pydantic import BaseModel, Field, ValidationError
 import requests
 import glob
 
-model_name = "gemma3:12b"
+model_name = "qwen3:4b"
 prompt_name = "literal"
 
-ollama_api_url = "http://10.105.158.17:11434"  # Ollama server URL
-# ollama_api_url = "http://localhost:11434"  # Ollama server URL
+# ollama_api_url = "http://10.105.158.17:11434"  # Ollama server URL
+ollama_api_url = "http://localhost:11434"  # Ollama server URL
 
 class Gol(BaseModel):
     minute: int = Field(
@@ -38,49 +38,58 @@ def carregar_prompt(prompt_name: str = "default") -> str:
 
 
 def gerar_resposta_llm(narrativa, prompt_name, previous_output=None, error_msg=None):
-    # Endpoint de CHAT é mais organizado que o de GENERATE
     url = f"{ollama_api_url}/api/chat"
     
-    # Carrega o prompt do arquivo
-    system_content = carregar_prompt(prompt_name)
+    # 1. Carrega o prompt base
+    base_system_content = carregar_prompt(prompt_name)
+    
+    # 2. Se houver erro anterior, injetamos o aviso NO SYSTEM PROMPT (mais autoridade)
+    # Em vez de criar um diálogo longo, damos uma instrução corretiva direta.
+    if error_msg:
+        instrucao_correcao = (
+            f"\n\nIMPORTANT: Your last attempt failed validation with error: {error_msg}.\n"
+        )
+        system_content = base_system_content + instrucao_correcao
+    else:
+        system_content = base_system_content
 
+    # 3. Mantemos a estrutura simples (Stateless)
+    # Isso evita que o modelo tente "explicar" o erro anterior dentro do JSON
     messages = [
         {"role": "system", "content": system_content},
-        {"role": "user", "content": f"Narrative: {narrativa}"}
+        {"role": "user", "content": f"Narrative to process:\n{narrativa}"}
     ]
-
-    if previous_output and error_msg:
-        messages.append({"role": "assistant", "content": previous_output})
-        # Passamos o Schema esperado novamente para reforçar o contrato
-        schema_info = json.dumps(ListaGols.model_json_schema(), indent=2)
-        messages.append({
-            "role": "user", 
-            "content": (
-                f"Your previous response failed Pydantic validation.\n"
-                f"Error details: {error_msg}\n"
-                f"Expected Schema: {schema_info}\n"
-                "Please fix the JSON and return ONLY the corrected object."
-            )
-        })
 
     payload = {
         "model": model_name,
         "messages": messages,
         "stream": False,
-        "format": "json",
+        "format": ListaGols.model_json_schema(), # Força o decoder-level enforcement
         "options": {
-            "temperature": 0.1,
-            "top_p": 0.9,
-            "num_predict": 500,
+            "temperature": 0.0,       # Máximo determinismo para extração
+            "num_ctx": 8192,          # Aumentado para modelos maiores (30B+)
+            "num_predict": 1000,      # Espaço para listas longas de gols
+            "top_k": 20,
+            "top_p": 0.9
         }
     }
 
     try:
-        response = requests.post(url, json=payload, timeout=60)
+        # Aumentei o timeout para 300s. Modelos de 30B em infra comum podem demorar no prefill.
+        response = requests.post(url, json=payload, timeout=300)
         response.raise_for_status()
-        return response.json().get("message", {}).get("content", "")
+        
+        content = response.json().get("message", {}).get("content", "")
+        
+        # Limpeza extra: Às vezes o modelo coloca markdown mesmo com o format:json
+        content = content.replace("```json", "").replace("```", "").strip()
+        
+        return content
+    except requests.exceptions.Timeout:
+        print(f"❌ Timeout no modelo {model_name}. Narrativa muito longa ou hardware lento.")
+        return ""
     except Exception as e:
-        print(f"❌ Connection error: {e}")
+        print(f"❌ Erro na chamada ao Ollama: {e}")
         return ""
 
 def processar_narrativas(lista_arquivos: List[str], max_retries=3):

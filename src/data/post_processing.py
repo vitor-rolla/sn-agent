@@ -1,8 +1,8 @@
 import json
 import os
 
-model_name = "o3"
-prompt_name = "default"
+model_name = "qwen3:4b"
+prompt_name = "literal"
 
 
 data = json.load(open(f'data/results/{model_name}/{prompt_name}/raw_results.json')) 

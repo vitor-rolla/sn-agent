@@ -2,8 +2,8 @@ import json
 import re
 from difflib import SequenceMatcher
 
-model_name = "o3"
-prompt_name = "default"
+model_name = "qwen3:4b"
+prompt_name = "literal"
 
 
 def load_json(filepath):
