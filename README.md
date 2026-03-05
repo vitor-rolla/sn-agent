@@ -1,16 +1,16 @@
 # SN-Agent: Soccer Narratives Agent
 
 <p align="center">
-    <a href=""><img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="100%"></a>
+    <a href=""><img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="80%"></a>
 </p>
 
 ## Project Overview
 
 SN-Agent benchmarks multiple LLMs from OpenAI and Google Gemini to parse natural language soccer commentary into structured data. The system includes data preprocessing, model querying, evaluation metrics, and an interactive Streamlit application for real-time analysis.
 
-<a href="https://youtu.be/RlaRQrty4bs">Demo video: https://youtu.be/RlaRQrty4bs</a>
-<a href="https://sn-narratives.streamlit.app">Online App: https://sn-narratives.streamlit.app</a>
-<a href="https://github.com/vitor-rolla/sn-agent">Repo: https://github.com/vitor-rolla/sn-agent</a>
+- **<a href="https://youtu.be/RlaRQrty4bs">Demo video: https://youtu.be/RlaRQrty4bs</a>
+- **<a href="https://sn-narratives.streamlit.app">Online App: https://sn-narratives.streamlit.app</a>
+- **<a href="https://github.com/vitor-rolla/sn-agent">Repo: https://github.com/vitor-rolla/sn-agent</a>
 
 ---
 
