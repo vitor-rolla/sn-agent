@@ -1,14 +1,6 @@
 # SN-Agent: Soccer Narratives Agent
 
-<p align="center">
-    <a href=""><img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/logo.jpg" width="50%"></a>
-    <a href=""><img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="50%"></a>
-</p>
-
-<div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/logo.jpg" width="50%">
-    <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="50%">
-</div>
+| <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/logo.jpg" width="100%"> | <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="100%"> |
 
 ## Project Overview
 
