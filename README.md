@@ -90,17 +90,7 @@ Result analysis and visualization scripts.
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python >= 3.12
-- API Keys for:
-  - OpenAI (optional)
-  - Google Gemini (optional)
-  - Local Ollama installation (optional)
-
-### API Keys
+#### API Keys
 
 Configure your API keys in `~/.streamlit/secrets.toml`:
 
