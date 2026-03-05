@@ -1,6 +1,9 @@
 # SN-Agent: Soccer Narratives Agent
 
-| <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/logo.jpg" width="100%"> | <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="100%"> |
+<p align="center">
+  <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/logo.jpg" width="48%">
+  <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="48%">
+</p>
 
 ## Project Overview
 
