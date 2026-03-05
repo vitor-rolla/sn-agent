@@ -5,6 +5,11 @@
     <a href=""><img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="50%"></a>
 </p>
 
+<div style="display: flex; justify-content: center; gap: 10px;">
+    <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/logo.jpg" width="50%">
+    <img src="https://github.com/vitor-rolla/sn-agent/blob/main/src/app/intro-fig.png" width="50%">
+</div>
+
 ## Project Overview
 
 SN-Echoes leverages multiple LLM providers (OpenAI GPT, Google Gemini, and Ollama) to parse natural language soccer commentary into structured data. The system includes data preprocessing, model querying, evaluation metrics, and an interactive Streamlit application for real-time analysis.
